@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
-
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Magra:400,700&display=swap');
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
@@ -71,6 +72,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 /* Basic */
 
 	@-ms-viewport {
@@ -98,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1977,8 +1982,16 @@ input, select, textarea {
 				}
 
 /* Features */
+	#two {
+		/* padding: 30px; */
+		/* background-color: rgba(218, 102, 137, 0.514); */
+	}
 
-	.features {
+	#two .inner {
+		background-color: white;
+	}
+
+	.my-features {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1988,16 +2001,50 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-radius: 0.25em;
-		border: solid 1px rgba(255, 255, 255, 0.15);
-		background: rgba(255, 255, 255, 0.05);
-		margin: 0 0 2em 0;
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 20px;
+		margin-bottom: 2em;
 	}
+	
+		.my-features img {
+			height: 30px;
+			width: 30px;
+			object-fit: cover;
+			margin-right: 15px;
+		}
 
-		.features section {
-			padding: 3.5em 3em 1em 7em ;
-			width: 50%;
-			border-top: solid 1px rgba(255, 255, 255, 0.15);
+		.my-features section {
+			padding: 10px;
+			width: 250px;
+			margin: 15px 0px;
 			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.my-features section h3 {
+			margin: 0;
+			color: rgb(108, 83, 130);
+			color: rgb(99, 99, 99);
+			font-weight: 600;
+		}
+
+		.my-features .hidden-section {
+			width: 250px;
+			height: 0px;
+			margin: 0;
+			padding: 0;
+		}
+
+		#two h2 {
+			color: rgb(223, 110, 150);
+			letter-spacing: 0.1em;
+			/* color: rgb(110, 81, 134); */
+			text-align: center;
+			/* border-top: 1px solid pink; */
+			/* padding-top: 80px; */
 		}
 
 			.features section:nth-child(-n + 2) {
@@ -2005,7 +2052,7 @@ input, select, textarea {
 			}
 
 			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
+				border-left: solid 1px rgba(205, 115, 143, 0.15);
 			}
 
 			.features section .icon {
@@ -3004,7 +3051,7 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
+			/* background-position: center center; */
 			background-size: cover;
 			border-radius: 0;
 			display: block;
@@ -3013,7 +3060,7 @@ input, select, textarea {
 		}
 
 			.spotlights > section > .image img {
-				border-radius: 0;
+				/* border-radius: 0; */
 				display: block;
 			}
 
@@ -3256,11 +3303,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #ffffff;
 		}
 
 		.wrapper.fullscreen {
@@ -3524,7 +3571,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: #ffffff;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3737,7 +3784,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(0, 0, 0, 0.35);
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3777,11 +3824,11 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgba(0, 0, 0, 0.55);
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #000000;
 			}
 
 				#sidebar nav a.active:after {
@@ -3874,15 +3921,97 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		/* background-image: url("images/intro.svg"); */
+		background-image: url("https://cdn.pixabay.com/photo/2016/04/06/10/08/pink-1311251_1280.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
+		-webkit-backdrop-filter: brightness(50%);
+	}
+	#intro h1 {
+		font-size: 70px;
+		text-shadow: -3px -3px 20px rgb(214, 112, 137);
+		margin-bottom: 15px;
+		font-family: "Magna", sans-serif;
+		font-weight: bold;
+		/* text-transform: uppercase; */
 	}
 
-		#intro p {
-			font-size: 1.25em;
-		}
+	#intro p {
+		font-size: 1.25em;
+		color: rgb(255, 255, 255);
+		margin: 0px;
+		text-shadow: -3px -3px 20px rgb(214, 112, 137);
+	}
+
+	#intro .actions {
+		margin-top: 40px;
+	}
+
+	#intro a {
+		border: 1px solid white; 
+		padding: 10px 20px;
+		border-radius: 20px;
+		/* font-weight: bold; */
+		font-size: 16px;
+		color: rgb(255, 255, 255);
+		/* transition: 0.5s all; */
+		margin-top: 30px;
+	}
+
+	#intro a:hover {
+		border: 1px solid rgba(255, 255, 255, 0.687);
+		color: rgba(255, 255, 255, 0.687);
+	}
+
+	#one {
+		border-top: 5px solid white;
+	}
+
+	#one section {
+		height: 500px;
+		/* border-top: 5px solid white; */
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	#one section {
+		display: flex;
+		background-color: rgb(122, 98, 184);
+		color: rgb(60, 60, 60);
+		padding: 30px;
+		/* padding-top: 70px; */
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	#one img {
+		object-fit: cover;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+	}
+
+	#one h2 {
+		/* color: rgb(244, 136, 165);
+		color: rgb(110, 81, 134); */
+		color: white;
+		/* color: rgb(102, 66, 133); */
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 25px;
+		font-family: "Magna", sans-serif;
+		letter-spacing: 0.1em;
+	}
+	#one .content {
+		height: max-content;
+		/* padding: 20px; */
+		color: rgb(125, 125, 125);
+		color: rgba(255, 255, 255, 0.822);
+		width: 50%;
+	}
+
+
 
 			@media screen and (max-width: 980px) {
 
@@ -3907,3 +4036,4 @@ input, select, textarea {
 			}
 
 		}
+
