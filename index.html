@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -20,8 +21,9 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who I am</a></li>
-							<li><a href="#two">What I do</a></li>
+							<li><a href="#one">About Me</a></li>
+							<li><a href="#two">Skills</a></li>
+							<li><a href="#my-projects-container">Projects</a></li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
 					</nav>
@@ -46,7 +48,6 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<!-- <a href="#" class="image"><img src="images/me-closeup.png" alt="" data-position="center center" /></a> -->
 							<img src="images/me-closeup.png" />
 							<div class="content">
 								<div class="inner">
@@ -63,52 +64,18 @@
 								</div>
 							</div>
 						</section>
-						<!-- <section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section> -->
-						<!-- <section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section> -->
 					</section>
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>SKILLS</h2>
-							<!-- <ul class="skills-list">
-								<li>JavaScript</li>
-								<li>React</li>
-								<li>Redux</li>
-								<li>Ruby</li>
-								<li>Rails</li>
-								<li></li>
-							</ul> -->
 							<div class="my-features">
 								<section>
-									<!-- <span class="icon solid major fa-code"></span> -->
 									<img src="images/skills_icons/javascript.png" />
 									<h3>JavaScript</h3>
 								</section>
 								<section>
-									<!-- <span class="icon solid major fa-lock"></span> -->
 									<img src="images/skills_icons/react.png" />
 									<h3>React</h3>
 								</section>
@@ -166,17 +133,73 @@
 								<section class="hidden-section"></section>
 								<section class="hidden-section"></section>
 							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-							<div id="contact"></div>
 						</div>
 						
 					</section>
 					<!-- <div id="contact"></div> -->
 
 				<!-- Three -->
+
+				<section id="my-projects-container" class="wrapper fade-up">
+					<div class="inner">
+						<div class="my-projects">
+							<h2>PROJECTS</h2>
+							<ul>
+								<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+								
+								<li class="mySlides">
+									<div class="project-image">
+										<img src="images/projects/dokicupid.png" />
+									</div>
+									<div class="project-description">
+										<h1>DOKICUPID</h1>
+										<div class="project-links">
+											<i class="fas fa-external-link-alt"></i>
+											<i class="fab fa-github"></i>
+										</div>
+									</div>
+								</li>
+								<li class="mySlides">
+									<div class="project-image">
+										<img src="images/projects/yukis.png" />
+									</div>
+									<div class="project-description"><h1>YUKI'S GUITAR</h1></div>
+								</li>
+								<li class="mySlides">
+									<div class="project-image">
+										<img src="images/projects/spottocry.png" />
+									</div>
+									<!-- <div class="project-description"><h1>SPOTTOCRY</h1></div> --> 
+								</li>
+								<li class="mySlides">
+									<div class="project-image">
+										<img src="images/projects/synthagram.png" />
+									</div>
+									<div class="project-description"><h1>SYNTHAGRAM</h1></div>
+								</li>
+								<li class="mySlides">
+									<div class="project-image">
+										<img src="images/projects/netflex.png" />
+									</div>
+									<div class="project-description"><h1>NETFLEX</h1></div>
+								</li>
+								<li class="project-empty"></li>
+								<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+								<div id="current-slide-info-container">
+									<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+									<div id="current-slide-info">Testing</div>
+									<a class="next" onclick="plusSlides(1)">&#10095;</a>
+								</div>
+								
+							</ul>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- Four -->
 					<section id="three" class="wrapper style1 fade-up">
+						<div id="contact"></div>
 						<div class="inner">
 							<h2>Contact Me</h2>
 							<p>Send me an email at <b>leealexhoon@gmail.com</b>, or leave a message here!</p>
@@ -215,9 +238,9 @@
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> --> 
+												<li><a href="https://github.com/alex629lee" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/alex629lee" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
