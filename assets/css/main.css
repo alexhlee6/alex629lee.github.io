@@ -2070,24 +2070,15 @@ input, select, textarea {
 			margin-bottom: 150px;
 			border: 1px solid lightgray;
 			box-shadow: 5px 5px 10px gray;
-			/* font-family: 'Baloo Bhaijaan', cursive;
-			font-family: 'Chewy', cursive; */
 			padding-bottom: 100px;
 			position: relative;
 		}
 
 		#my-projects-container ul li {
-			/* border: 1px solid lightgray; */
-			/* width: 80%; */
-			/* max-width: 770px; */
-			max-height: 60vh;
-			height: 60vh;
-			/* max-height: 500px; */
 			position: relative;
 			padding: 0;
 			overflow: hidden;
 			display: none;
-			/* border: 5px solid rgb(238, 173, 184); */
 		}
 
 		#my-projects-container .project-image {
@@ -2167,7 +2158,7 @@ input, select, textarea {
 		.prev, .next {
 			cursor: pointer;
 			font-size: 50px;
-			height: 50px;
+			/* height: 50px; */
 		}
 
 		.prev:hover, .next:hover {
@@ -2177,8 +2168,8 @@ input, select, textarea {
 		#current-slide-info-container {
 			position: absolute;
 			bottom: 15px;
-			height: 100px;
-			font-size: 40px;
+			/* height: 100px; */
+			/* font-size: 40px; */
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
@@ -2190,7 +2181,13 @@ input, select, textarea {
 			bottom: 15px;
 			height: 100px;
 			font-size: 40px; */
-			height: 33px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		#current-slide-info span {
+			display: flex;
+			align-items: center;
 		}
 
 		.project-links {
@@ -2210,16 +2207,17 @@ input, select, textarea {
 				-5px 5px 5px rgb(235, 159, 171); */
 		}
 
-		#my-projects-container .my-projects span span {
+		#my-projects-container .my-projects span h2 {
 			text-transform: uppercase;
 			font-weight: bold;
-			font-size: 30px;
+			/* font-size: 30px; */
 			letter-spacing: 0.08em;
-			margin-right: 15px;
+			margin: 0px 10px;
+			margin-bottom: 0;
 		}
 
 		#my-projects-container .my-projects i {
-			font-size: 30px;
+			/* font-size: 30px; */
 			margin-left: 5px;
 			position: relative;
 			bottom: 3px;
@@ -4029,6 +4027,19 @@ input, select, textarea {
 					display: none;
 				}
 
+				#one img {
+					width: 30vw;
+					height: 30vw;
+					max-height: 250px;
+					max-width: 250px;
+					margin: 20px 0px;
+					margin-right: 40px;
+				}
+
+				#one .content {
+					padding: 10px;
+				}
+
 			}
 
 			@media screen and (max-width: 736px) {
@@ -4047,3 +4058,54 @@ input, select, textarea {
 
 		}
 
+@media screen and (max-width: 600px) {
+
+	#one section {
+		flex-direction: column;
+	}
+
+	#one img {
+		margin: 20px;
+	}
+
+	#current-slide-info-container {
+		/* font-size: 20px; */
+	}
+
+	#current-slide-info {
+		position: relative;
+		top: 10px;
+	}
+
+	#current-slide-info span {
+		/* display: flex; */
+		align-items: center;
+		/* height: 25px; */
+		flex-direction: column;
+	}
+	#current-slide-info span a {
+		height: 30px;
+	}
+
+	#current-slide-info span div {
+		display: flex;
+		width: 100%;
+		/* height: 20px; */
+		justify-content: center;
+	}
+
+	#my-projects-container #current-slide-info span span {
+		font-size: 23px;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	#my-projects-container #current-slide-info span i {
+		font-size: 22px;
+		margin-top: 10px;
+	}
+
+	#two .my-features section {
+		width: 50%;
+	}
+}

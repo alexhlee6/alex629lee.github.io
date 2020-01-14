@@ -3,15 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   slides[0].style.display = "block";
   document.getElementById("current-slide-info").innerHTML = `
     <span>
-      <span>DokiCupid</span>
-      <div>
+      <h2>DOKICUPID</h2>
+      <h2>
         <a href="http://dokicupid.herokuapp.com">
           <i class="fas fa-external-link-alt"></i>
         </a>
         <a href="https://github.com/alex629lee/DokiCupidApp">
           <i class="fab fa-github"></i>
         </a>
-      <div>
+      </h2>
     </span>
   `;
 })
@@ -72,9 +72,11 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 
   let inner = `<span>
-    <span>${projectNames[slideIndex].name}</span> 
+    <h2>${projectNames[slideIndex].name.toUpperCase()}</h2> 
+    <h2>
     <a href=${projectNames[slideIndex].live}><i class="fas fa-external-link-alt"></i></a>
     <a href=${projectNames[slideIndex].repo}><i class="fab fa-github"></i></a>
-  </span>`;
+    </div>
+  </h2>`;
   document.getElementById("current-slide-info").innerHTML = inner;
 }
