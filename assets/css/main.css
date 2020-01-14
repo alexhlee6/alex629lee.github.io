@@ -2727,7 +2727,7 @@ input, select, textarea {
 		display: flex;
 		cursor: default;
 		list-style: none;
-		margin-left: -1em;
+		/* margin-left: -1em; */
 		padding-left: 0;
 	}
 
@@ -3957,21 +3957,58 @@ input, select, textarea {
 
 	#intro .actions {
 		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	#intro .actions li {
+		/* width: max-content; */
+		width: fit-content;
+		padding: 0;
+		flex-grow: 0;
+		font-size: 25px;
+	}
+
+	#intro .intro-icons {
+		display:flex;
+		width: 100%;
+		margin-left: 5px;
+		margin-bottom: 15px;
+	}
+
+	#intro .intro-icon {
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		font-size: 35px;
+		width: min-content;
+		margin-right: 20px;
+	}
+
+	#intro .intro-icon:hover {
+		border: 0;
+		padding: 0;
+		border-radius: 0;
+		font-size: 35px;
 	}
 
 	#intro a {
-		border: 1px solid white; 
-		padding: 10px 20px;
-		border-radius: 20px;
+		/* border: 1px solid white;  */
+		/* padding: 10px 15px; */
+		/* border-radius: 20px; */
+		margin-right: 20px;
 		/* font-weight: bold; */
-		font-size: 16px;
+		font-size: 18px;
 		color: rgb(255, 255, 255);
 		/* transition: 0.5s all; */
 		margin-top: 30px;
 	}
 
 	#intro a:hover {
-		border: 1px solid rgba(255, 255, 255, 0.687);
+		/* border: 1px solid rgba(255, 255, 255, 0.687); */
 		color: rgba(255, 255, 255, 0.687);
 	}
 
