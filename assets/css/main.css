@@ -3989,7 +3989,7 @@ input, select, textarea {
 	}
 
 	#intro .intro-icon:hover {
-		border: 0;
+		border: none;
 		padding: 0;
 		border-radius: 0;
 		font-size: 35px;
@@ -4000,6 +4000,7 @@ input, select, textarea {
 		/* padding: 10px 15px; */
 		/* border-radius: 20px; */
 		margin-right: 20px;
+		border: none;
 		/* font-weight: bold; */
 		font-size: 18px;
 		color: rgb(255, 255, 255);
@@ -4009,6 +4010,7 @@ input, select, textarea {
 
 	#intro a:hover {
 		/* border: 1px solid rgba(255, 255, 255, 0.687); */
+		border: none;
 		color: rgba(255, 255, 255, 0.687);
 	}
 
