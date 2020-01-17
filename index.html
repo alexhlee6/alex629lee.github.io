@@ -220,15 +220,17 @@
 							<p>Send me an email at <b>leealexhoon@gmail.com</b>, or leave a message here!</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form 
+										method="POST" action="https://formspree.io/xgeankpn" 
+									>
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" />
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<label for="_replyto">Email</label>
+												<input type="text" name="_replyto" id="email" />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
@@ -236,7 +238,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><button type="submit" class="button submit">Send Message</button></li>
 										</ul>
 									</form>
 								</section>
@@ -288,6 +290,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
