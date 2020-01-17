@@ -20,20 +20,20 @@ const projectNames = {
     technologies: "JavaScript, React, Apollo, GraphQL, MongoDB, Node.js, Express",
     description: "Music streaming web application based on Spotify where users can ride out their melancholic moods."
   },
-  // 4: {
-  //   name: "Synthagram",
-  //   live: "http://synthagram.herokuapp.com",
-  //   repo: "https://github.com/eliraybon/synthagram",
-  //   technologies: "",
-  //   description: ""
-  // },
   4: {
     name: "Netflex",
     live: "http://netflex80s.herokuapp.com",
     repo: "https://github.com/mitchellreiss/netflex",
     technologies: "React, Redux, Node.js, Express, MongoDB, BCrypt, Validator",
     description: "Retro workout-themed video streaming service based on Netflix for tubular time travelers to get movin' and groovin'."
-  }
+  },
+  // 5: {
+  //   name: "Synthagram",
+  //   live: "http://synthagram.herokuapp.com",
+  //   repo: "https://github.com/eliraybon/synthagram",
+  //   technologies: "",
+  //   description: ""
+  // },
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -56,6 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
     <p><i>${projectNames[1].technologies}</i></p>
     <p>${projectNames[1].description}</p>
   `;
+  document.addEventListener("keydown", (e) => {
+    // left: 37, right: 39
+    if (e.keyCode === 37) {
+      plusSlides(-1);
+    } else if (e.keyCode === 39) {
+      plusSlides(1);
+    }
+  });
 })
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -76,27 +84,27 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  let descriptions = document.getElementsByClassName("project-description");
-  // var dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  
+  if (slides[slideIndex-1]) {
+    slides[slideIndex - 1].style.display = "block";
 
-  slides[slideIndex - 1].style.display = "block";
+    let inner = `<span>
+      <h2>${projectNames[slideIndex].name.toUpperCase()}</h2> 
+      <h2>
+      <a href=${projectNames[slideIndex].live}><i class="fas fa-external-link-alt"></i></a>
+      <a href=${projectNames[slideIndex].repo}><i class="fab fa-github"></i></a>
+      </div>
+    </h2>`;
+    document.getElementById("current-slide-info").innerHTML = inner;
 
-  let inner = `<span>
-    <h2>${projectNames[slideIndex].name.toUpperCase()}</h2> 
-    <h2>
-    <a href=${projectNames[slideIndex].live}><i class="fas fa-external-link-alt"></i></a>
-    <a href=${projectNames[slideIndex].repo}><i class="fab fa-github"></i></a>
-    </div>
-  </h2>`;
-  document.getElementById("current-slide-info").innerHTML = inner;
-
-  document.getElementById("current-slide-description").innerHTML = `
-    <p><i>${projectNames[slideIndex].technologies}</i></p>
-    <p>${projectNames[slideIndex].description}</p>
-  `;
+    document.getElementById("current-slide-description").innerHTML = `
+      <p><i>${projectNames[slideIndex].technologies}</i></p>
+      <p>${projectNames[slideIndex].description}</p>
+    `;
+  }
 }
