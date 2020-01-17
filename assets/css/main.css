@@ -2058,8 +2058,9 @@ input, select, textarea {
 			color: rgb(230, 112, 143);
 		}
 
-		#my-projects-container ul {
+		#slides-description-container {
 			list-style: none;
+			margin: 0 auto;
 			display: flex;
 			flex-wrap: nowrap;
 			justify-content: center;
@@ -2070,8 +2071,12 @@ input, select, textarea {
 			margin-bottom: 150px;
 			border: 1px solid lightgray;
 			box-shadow: 5px 5px 10px gray;
-			padding-bottom: 100px;
 			position: relative;
+			max-width: 775px;
+		}
+
+		#my-projects-container ul {
+			padding-left: 0;
 		}
 
 		#my-projects-container ul li {
@@ -2079,6 +2084,7 @@ input, select, textarea {
 			padding: 0;
 			overflow: hidden;
 			display: none;
+			max-width: 775px;
 		}
 
 		#my-projects-container .project-image {
@@ -2087,16 +2093,12 @@ input, select, textarea {
 			min-height: 100%;
 			height: 100%;
 			object-fit: cover;
-			/* max-height: 400px; */
 		}
 
 		#my-projects-container .project-image img {
-			/* width: 100%; */
 			max-height: 100%;
 			width: 100%;
 			height: 100%;
-			/* max-width: 110%; */
-			/* min-height: 100%; */
 			position: relative;
 			object-fit: cover;
 		}
@@ -2117,15 +2119,11 @@ input, select, textarea {
 			z-index: 3;
 			top: 0;
 			left: 0;
-			/* padding-top: 50px; */
-			/* display: none; */
 			transition: opacity 0.5s ease-in-out;
 			color: white;
 			text-shadow: 3px 3px 5px rgb(216, 142, 155), -3px -3px 10px rgb(216, 142, 155);
 			opacity: 0;
 			background-color: rgba(255, 199, 219, 0.596);
-			/* background: linear-gradient(rgba(240, 157, 186, 0.92) 20%, transparent); */
-			/* font-size: 40px; */
 			font-weight: bold;
 		}
 
@@ -2133,17 +2131,17 @@ input, select, textarea {
 			color: white;
 		}
 
-		/* #my-projects-container ul li:hover .project-description {
-			display:block;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			display: flex;
-			z-index: 3;
-			top: 0;
-			left: 0;
-			opacity: 1;
-		} */
+		#current-slide-description {
+			width: 85%;
+			margin-top: 10px;
+			min-height: 100px;
+			margin-bottom: 10px;
+		}
+
+		#current-slide-description p {
+			margin-bottom: 10px;
+			text-align: center;
+		}
 
 		.prev {
 			margin-left: 30px;
@@ -2158,18 +2156,22 @@ input, select, textarea {
 		.prev, .next {
 			cursor: pointer;
 			font-size: 50px;
-			/* height: 50px; */
 		}
 
 		.prev:hover, .next:hover {
 			color: rgb(230, 139, 154);
 		}
 
+		#current-slide-info-desc {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: space-evenly;	
+			align-items: center;
+		}
+
 		#current-slide-info-container {
-			position: absolute;
-			bottom: 15px;
-			/* height: 100px; */
-			/* font-size: 40px; */
+			margin: 10px 0px;
 			display: flex;
 			width: 100%;
 			justify-content: space-between;
@@ -2177,10 +2179,6 @@ input, select, textarea {
 		}
 
 		#current-slide-info {
-			/* position: absolute;
-			bottom: 15px;
-			height: 100px;
-			font-size: 40px; */
 			display: flex;
 			flex-wrap: wrap;
 		}
@@ -2201,23 +2199,17 @@ input, select, textarea {
 			font-size: 70px;
 			color: rgb(255, 255, 255);
 			text-shadow: none;
-			/* text-shadow:5px 5px 5px rgb(235, 159, 171), 
-				-5px -5px 5px rgb(235, 159, 171), 
-				5px -5px 5px rgb(235, 159, 171), 
-				-5px 5px 5px rgb(235, 159, 171); */
 		}
 
 		#my-projects-container .my-projects span h2 {
 			text-transform: uppercase;
 			font-weight: bold;
-			/* font-size: 30px; */
 			letter-spacing: 0.08em;
 			margin: 0px 10px;
 			margin-bottom: 0;
 		}
 
 		#my-projects-container .my-projects i {
-			/* font-size: 30px; */
 			margin-left: 5px;
 			position: relative;
 			bottom: 3px;
@@ -2256,7 +2248,10 @@ input, select, textarea {
 					left: 1.5em;
 					top: 2em;
 				}
-
+			.next, .prev {
+				font-size: 30px;
+				margin: 0;
+			}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -2681,7 +2676,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		/* margin: 0 0 2em 0; */
 		padding-left: 1em;
 	}
 
@@ -4110,12 +4105,12 @@ input, select, textarea {
 	}
 
 	#current-slide-info-container {
-		/* font-size: 20px; */
+		padding: 10px 0px;
 	}
 
 	#current-slide-info {
 		position: relative;
-		top: 10px;
+		/* top: 10px; */
 	}
 
 	#current-slide-info span {
