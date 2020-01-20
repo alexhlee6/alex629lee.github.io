@@ -20,20 +20,20 @@ const projectNames = {
     technologies: "JavaScript, React, Apollo, GraphQL, MongoDB, Node.js, Express",
     description: "Music streaming web application based on Spotify where users can ride out their melancholic moods."
   },
-  4: {
+  5: {
     name: "Netflex",
     live: "http://netflex80s.herokuapp.com",
     repo: "https://github.com/mitchellreiss/netflex",
     technologies: "React, Redux, Node.js, Express, MongoDB, BCrypt, Validator",
     description: "Retro workout-themed video streaming service based on Netflix for tubular time travelers to get movin' and groovin'."
   },
-  // 5: {
-  //   name: "Synthagram",
-  //   live: "http://synthagram.herokuapp.com",
-  //   repo: "https://github.com/eliraybon/synthagram",
-  //   technologies: "",
-  //   description: ""
-  // },
+  4: {
+    name: "Synthagram",
+    live: "http://synthagram.herokuapp.com",
+    repo: "https://github.com/eliraybon/synthagram",
+    technologies: "React, Node, MongoDB, Express, GraphQL, Apollo, HTML, CSS",
+    description: "Music-themed mobile-first photo sharing application based on Instagram."
+  },
 }
 
 document.addEventListener("DOMContentLoaded", () => {
