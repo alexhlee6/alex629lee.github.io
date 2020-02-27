@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <span>
       <h2>DOKICUPID</h2>
       <h2>
-        <a href="http://dokicupid.herokuapp.com">
+        <a href="http://dokicupid.herokuapp.com" target="_blank">
           <i class="fas fa-external-link-alt"></i>
         </a>
         <a href="https://github.com/alex629lee/DokiCupidApp">
@@ -96,7 +96,7 @@ function showSlides(n) {
     let inner = `<span>
       <h2>${projectNames[slideIndex].name.toUpperCase()}</h2> 
       <h2>
-      <a href=${projectNames[slideIndex].live}><i class="fas fa-external-link-alt"></i></a>
+      <a href=${projectNames[slideIndex].live} target="_blank"><i class="fas fa-external-link-alt"></i></a>
       <a href=${projectNames[slideIndex].repo}><i class="fab fa-github"></i></a>
       </div>
     </h2>`;
