@@ -1,22 +1,29 @@
 const projectNames = {
   1: {
+    name: "owoticon",
+    live: "https://apps.apple.com/us/app/owoticon/id1500103502",
+    repo: "https://github.com/alexhlee6/owoticon",
+    technologies: "React Native, Redux, Expo",
+    description: "A simple IOS/Android application where users can quickly find cute emoticon text faces to use in conversations."
+  },
+  2: {
     name: "DokiCupid",
     live: "http://dokicupid.herokuapp.com",
-    repo: "https://github.com/alex629lee/DokiCupidApp",
+    repo: "https://github.com/alexhlee6/DokiCupidApp",
     technologies: "React-Redux, Ruby on Rails, Postgres, AWS, WebSockets, AJAX",
     description: "Anime-inspired dating app based on OkCupid featuring profiles, matchmaking, filtered search, and real-time chat."
   },
-  2: {
+  3: {
     name: "Yuki's Guitar",
     live: "http://yukisguitar.herokuapp.com",
-    repo: "https://github.com/alex629lee/YukisGuitar",
+    repo: "https://github.com/alexhlee6/YukisGuitar",
     technologies: "JavaScript, React, Canvas, jQuery, MongoDB, Express",
     description: "Responsive music rhythm game similar to Guitar Hero where players score points by clicking buttons to the timing of the music."
   },
-  3: {
+  4: {
     name: "SpotToCry",
     live: "http://spottocry.herokuapp.com",
-    repo: "https://github.com/alex629lee/SpotToCry",
+    repo: "https://github.com/alexhlee6/SpotToCry",
     technologies: "JavaScript, React, Apollo, GraphQL, MongoDB, Node.js, Express",
     description: "Music streaming web application based on Spotify where users can ride out their melancholic moods."
   },
@@ -27,7 +34,7 @@ const projectNames = {
     technologies: "React, Redux, Node.js, Express, MongoDB, BCrypt, Validator",
     description: "Retro workout-themed video streaming service based on Netflix for tubular time travelers to get movin' and groovin'."
   },
-  4: {
+  6: {
     name: "Synthagram",
     live: "http://synthagram.herokuapp.com",
     repo: "https://github.com/eliraybon/synthagram",
@@ -41,12 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
   slides[0].style.display = "block";
   document.getElementById("current-slide-info").innerHTML = `
     <span>
-      <h2>DOKICUPID</h2>
+      <h2>owoticon</h2>
       <h2>
-        <a href="http://dokicupid.herokuapp.com" target="_blank">
+        <a href="https://apps.apple.com/us/app/owoticon/id1500103502" target="_blank">
           <i class="fas fa-external-link-alt"></i>
         </a>
-        <a href="https://github.com/alex629lee/DokiCupidApp">
+        <a href="https://github.com/alexhlee6/owoticon">
           <i class="fab fa-github"></i>
         </a>
       </h2>
