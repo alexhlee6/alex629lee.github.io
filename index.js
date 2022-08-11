@@ -8,35 +8,35 @@ const projectNames = {
   },
   2: {
     name: "DokiCupid",
-    live: "http://dokicupid.herokuapp.com",
+    live: "https://dokicupid.herokuapp.com",
     repo: "https://github.com/alexhlee6/DokiCupidApp",
     technologies: "React-Redux, Ruby on Rails, Postgres, AWS, WebSockets, AJAX",
     description: "Anime-inspired dating app based on OkCupid featuring profiles, matchmaking, filtered search, and real-time chat."
   },
   3: {
     name: "Yuki's Guitar",
-    live: "http://yukisguitar.herokuapp.com",
+    live: "https://yukisguitar.herokuapp.com",
     repo: "https://github.com/alexhlee6/YukisGuitar",
     technologies: "JavaScript, React, Canvas, jQuery, MongoDB, Express",
     description: "Responsive music rhythm game similar to Guitar Hero where players score points by clicking buttons to the timing of the music."
   },
   4: {
     name: "SpotToCry",
-    live: "http://spottocry.herokuapp.com",
+    live: "https://spottocry.herokuapp.com",
     repo: "https://github.com/alexhlee6/SpotToCry",
     technologies: "JavaScript, React, Apollo, GraphQL, MongoDB, Node.js, Express",
     description: "Music streaming web application based on Spotify where users can ride out their melancholic moods."
   },
   5: {
     name: "Netflex",
-    live: "http://netflex80s.herokuapp.com",
+    live: "https://netflex80s.herokuapp.com",
     repo: "https://github.com/mitchellreiss/netflex",
     technologies: "React, Redux, Node.js, Express, MongoDB, BCrypt, Validator",
     description: "Retro workout-themed video streaming service based on Netflix for tubular time travelers to get movin' and groovin'."
   },
   6: {
     name: "Synthagram",
-    live: "http://synthagram.herokuapp.com",
+    live: "https://synthagram.herokuapp.com",
     repo: "https://github.com/eliraybon/synthagram",
     technologies: "React, Node, MongoDB, Express, GraphQL, Apollo, HTML, CSS",
     description: "Music-themed mobile-first photo sharing application based on Instagram."
