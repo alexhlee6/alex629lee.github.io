@@ -15,7 +15,7 @@ const projectNames = {
   },
   3: {
     name: "Yuki's Guitar",
-    live: "https://yukisguitar.herokuapp.com",
+    live: "https://yukisguitar-c8ecb0e21612.herokuapp.com/",
     repo: "https://github.com/alexhlee6/YukisGuitar",
     technologies: "JavaScript, React, Canvas, jQuery, MongoDB, Express",
     description: "Responsive music rhythm game similar to Guitar Hero where players score points by clicking buttons to the timing of the music."
